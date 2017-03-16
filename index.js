@@ -14,7 +14,6 @@ axios.get("http://xkcd.com/info.0.json")
 
     .then(function (response) {
         var resultObj = response.data;
-        //var data = resultObj.data;
         console.log(chalk.cyan.italic("Issue date: " + resultObj.day + " " + resultObj.month + " " + resultObj.year));
         console.log(chalk.yellow.italic("Issue title: " + resultObj.title));
         console.log(chalk.red.italic("Issue image url: " + resultObj.img));
